@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+}
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("./images/Wallpaper.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.container {
+  /* border: 2px solid red; */
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---------- NAV ---------- */
+
+nav {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.664);
+  box-shadow: 0 0 8px 1px black;
+  font-size: 2.5rem;
+  color: #f9d467;
+}
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-container {
+  width: 20%;
+  text-align: center;
+}
+
+/* ---------- SQUARE ---------- */
+
+.square-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.664);
+  border-radius: 50px;
+  box-shadow: 0 0 8px 1px black;
+  height: 300px;
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 20px 5px 20px;
+  font-size: 25px;
+  color: white;
+}
+
+.text {
+  width: 400px;
+  text-align: center;
+}
+
+.text-header {
+  font-size: 35px;
+  color: #f9d467;
+}
+
+.text-content {
+  margin-top: 10px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.icon {
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.square-one .icon {
+  background-image: url("./images/restaurant.png");
+}
+
+.square-two .icon {
+  background-image: url("./images/keto.png");
+}
+
+.square-three .icon {
+  background-image: url("./images/planet-earth.png");
+}
+
+footer {
+  height: 40px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.664);
+  box-shadow: 0 0 8px 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 300;
+}
