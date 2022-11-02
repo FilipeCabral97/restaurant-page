@@ -60,9 +60,31 @@ nav {
   text-align: center;
 }
 
-/* ---------- SQUARE ---------- */
+.active {
+  text-decoration: underline;
+  font-style: italic;
+}
 
-.square-container {
+/* ---------- FOOTER ---------- */
+
+footer {
+  height: 40px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.664);
+  box-shadow: 0 0 8px 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 300;
+}
+
+/* ---------- MAIN ---------- */
+/* -------------------------- */
+/* -------------------------- */
+/* ---------- CARD ---------- */
+
+.card-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -107,26 +129,163 @@ nav {
   background-repeat: no-repeat;
 }
 
-.square-one .icon {
+.card-one .icon {
   background-image: url("./images/restaurant.png");
 }
 
-.square-two .icon {
+.card-two .icon {
   background-image: url("./images/keto.png");
 }
 
-.square-three .icon {
+.card-three .icon {
   background-image: url("./images/planet-earth.png");
 }
 
-footer {
-  height: 40px;
-  width: 100%;
+/* ---------- MENU ---------- */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* justify-content: space-between; */
+  gap: 20px;
+}
+
+.dish {
   background-color: rgba(0, 0, 0, 0.664);
+  border-radius: 50px;
   box-shadow: 0 0 8px 1px black;
+  height: 300px;
+  min-width: 100px;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+  padding: 5px 20px 5px 20px;
+  text-align: center;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("/home/filipe/Odin/repos/restaurant-page/src/images/brussels.jpg"); */
+}
+
+.dish-text-container {
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dish-name {
+  font-size: 36px;
+  color: #f9d467;
+}
+
+.dish-text {
   color: white;
+  font-size: 20px;
   font-weight: 300;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0.425);
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.425);
+  border-radius: 20px;
+  padding: 8px;
+}
+
+.dish-img {
+  /* width: 100%; */
+  object-fit: cover;
+}
+
+.dish-one {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("/home/filipe/Odin/repos/restaurant-page/src/images/brussels.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dish-two {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("/home/filipe/Odin/repos/restaurant-page/src/images/bacon-jalapeno.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dish-three {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("/home/filipe/Odin/repos/restaurant-page/src/images/salmon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dish-four {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("/home/filipe/Odin/repos/restaurant-page/src/images/buffalo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dish-five {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("/home/filipe/Odin/repos/restaurant-page/src/images/meatballs.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dish-six {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("/home/filipe/Odin/repos/restaurant-page/src/images/pad-see-ew.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dish-seven {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("/home/filipe/Odin/repos/restaurant-page/src/images/baked-corn-casserole.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ---------- CONTACTS ---------- */
+.contacts-container {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.664);
+  border-radius: 50px;
+  box-shadow: 0 0 8px 1px black;
+  padding: 40px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.text-phone-container {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.contact-image {
+  width: 200px;
+  height: auto;
+  filter: invert(100%) sepia(3%) saturate(695%) hue-rotate(227deg)
+    brightness(107%) contrast(100%);
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.reservation {
+  font-size: 28px;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 16px;
+  background-color: #f9d467;
+  cursor: pointer;
+  outline: none;
+}
+.reservation:hover {
+  opacity: 0.9;
 }
